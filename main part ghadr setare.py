@@ -2,7 +2,7 @@ from astropy.io import fits
 import numpy as np
 from photutils.aperture import CircularAperture, CircularAnnulus
 from photutils import aperture_photometry
-#This code is written by Mitra with help of Hananeh and Aysan for algorithms and ideas
+#This code is written by Mitra Maleki
 def calculate_magnitude(ref_mag, ref_flux, star_flux):
     magnitude = ref_mag - 2.5 * np.log10(star_flux / ref_flux)
     return magnitude
